@@ -60,6 +60,13 @@ const Details = (props) => {
           alt={recipe.label}
           onError={handleError}
         />
+        <RightInfo>
+          <Ol>
+            {recipe.ingredientLines.map((ing, index) => (
+              <Li key={index}>{ing}</Li>
+            ))}
+          </Ol>
+        </RightInfo>
       </Wrapper>
     </Container>
   );
