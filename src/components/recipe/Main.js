@@ -8,6 +8,12 @@ const Main = () => {
   const {cards} = useContext(RecipeContext);
 
   return (
+    <Container cards={cards?.length}>
+      <Header />
+      <Wrapper>
+        {cards?.map((card, index) => (<RecipeCard key={index} card={card}/>))}
+      </Wrapper>
+    </Container>
   )
 }
 
