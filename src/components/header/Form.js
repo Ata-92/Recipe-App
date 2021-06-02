@@ -10,6 +10,9 @@ const Form = () => {
   const queryTerm = useRef();
 
   return (
+    <Grid container justify="center" alignItems="center" spacing={2} style={{border: ".1vw solid #fff", borderRadius: ".3vw", width: "32%", margin: "auto"}}>
+
+    </Grid>
   );
 };
 
