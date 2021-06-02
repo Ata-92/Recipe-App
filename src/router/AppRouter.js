@@ -15,6 +15,28 @@ const AppRouter = () => {
   const [query, setQuery] = useState();
   const APP_ID = "e97f3f42";
   const APP_KEY = "a4a3f97b1eb28df3474e7ce892e74e6d";
+
+  const getRecipe = async(query) => {
+    if (query) {
+      try {
+        const response = await axios({
+          method: "GET",
+          url: `https://api.edamam.com/search?q=${query}&app_id=${APP_ID}&app_key=${APP_KEY}`
+        });
+
+        const data = response.data.hits.map((recipe, index) => ({
+          id: index,
+          recipe: recipe.recipe
+        }));
+
+        setCards(data);
+
+      } catch (err) {
+        console.log(err.message);
+        alert(`Your query ${query} is invalid. Please try again.`)
+      }
+    }
+  }
   return (
   )
 }
