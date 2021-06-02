@@ -14,6 +14,11 @@ import {
 import diet from "../../assets/diet.svg";
 
 const Details = (props) => {
+  const recipe = props.location.card.recipe;
+
+  const handleError = e => {
+    e.target.style.visibility = "hidden";
+  };
 
   return (
     <Container>
