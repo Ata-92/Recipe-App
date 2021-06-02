@@ -44,6 +44,16 @@ const AppRouter = () => {
     setQuery(queryTerm.current.children[1].children[0].value);
   }
 
+  const AuthContainer = () => {
+    return (
+    <>
+      <Navbar />
+      <PrivateRouter login={login} path="/" exact component={Main}/>
+      <PrivateRouter login={login} path="/about" exact component={About}/>
+      <PrivateRouter login={login} path="/details/:id" exact component={Details}/>
+    </>
+    )
+  }
 
   return (
   )
