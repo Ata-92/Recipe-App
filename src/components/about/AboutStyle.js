@@ -14,3 +14,32 @@ export const Wrapper = styled.div`
   border-radius: .3vw;
   padding: 1vh 1vw;
 `
+
+export const Img = styled.img`
+  width: 30vw;
+`
+
+export const H2 = styled.h2`
+  & span {
+    color: white;
+
+    & span {
+      font-size: xx-large;
+    }
+  }
+`;
+
+export const H3 = styled.h3`
+  text-align: right;
+  margin: 2vh 1vw;
+`
+
+export const H4 = styled.h4`
+  text-align: right;
+  margin: 2vh 1vw;
+
+  & span {
+    color: #fff;
+    text-decoration: underline;
+  }
+`
