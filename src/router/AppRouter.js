@@ -56,6 +56,18 @@ const AppRouter = () => {
   }
 
   return (
+    <RecipeContext.Provider value={{ cards, handleClick }}>
+      <Router>
+        <Switch>
+          <Route
+              path="/login"
+              exact
+              component={() => <Login setLogin={setLogin} login={login}/>}
+          />
+          <Route component={AuthContainer} />
+        </Switch>
+      </Router>
+    </RecipeContext.Provider>
   )
 }
 
