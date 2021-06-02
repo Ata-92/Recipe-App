@@ -11,7 +11,16 @@ const Form = () => {
 
   return (
     <Grid container justify="center" alignItems="center" spacing={2} style={{border: ".1vw solid #fff", borderRadius: ".3vw", width: "32%", margin: "auto"}}>
-
+      <Grid item>
+        <TextField
+          id="outlined-search"
+          label="Search"
+          type="search"
+          variant="outlined"
+          style={{backgroundColor: "#fff", borderRadius: ".5vw"}}
+          ref={queryTerm}
+        />
+      </Grid>
     </Grid>
   );
 };
