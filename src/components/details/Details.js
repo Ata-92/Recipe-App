@@ -16,6 +16,12 @@ import diet from "../../assets/diet.svg";
 const Details = (props) => {
 
   return (
+    <Container>
+      <Heading>
+        <H2>{recipe.label}</H2>
+        <Img src={diet} alt="Diet Icon" />
+      </Heading>
+    </Container>
   );
 };
 
