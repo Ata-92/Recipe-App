@@ -1,0 +1,10 @@
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { RecipeContext } from '../context/RecipeContext';
+import { useState, useEffect } from 'react';
+import axios from 'axios';
+import Navbar from '../components/navbar/Navbar';
+import Login from '../components/login/Login';
+import About from '../components/about/About';
+import Main from '../components/recipe/Main';
+import Details from '../components/details/Details';
+import PrivateRouter from './PrivateRouter';
