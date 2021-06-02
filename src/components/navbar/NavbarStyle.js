@@ -80,3 +80,14 @@ export const Nav = styled.nav`
     }
   }
 `;
+
+export const Icon = styled.i`
+  display: none;
+  color: aqua;
+  font-size: xx-large;
+
+  @media screen and (max-width: 768px) {
+    display: inline;
+    cursor: pointer;
+  }
+`;
