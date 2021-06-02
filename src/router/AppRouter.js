@@ -37,6 +37,14 @@ const AppRouter = () => {
       }
     }
   }
+
+  useEffect(() => getRecipe(query), [query]);
+
+  const handleClick = (queryTerm) => {
+    setQuery(queryTerm.current.children[1].children[0].value);
+  }
+
+
   return (
   )
 }
