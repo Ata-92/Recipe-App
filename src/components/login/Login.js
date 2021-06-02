@@ -8,6 +8,15 @@ const Login = ({login, setLogin}) => {
       <Wrapper>
         <Img src={meal2} alt="Cook Icon"/>
         <H1>{String(`<ata/>`)} RECIPE</H1>
+        <form action="" onSubmit={handleSubmit}>
+          <div className="username">
+            <Input type="text" name="Username" placeholder="USERNAME" required/>
+          </div>
+          <div className="password">
+            <Input type="password" name="Password" placeholder="PASSWORD" required/>
+          </div>
+          <Button type="submit">LOGIN</Button>
+        </form>
       </Wrapper>
     </Container>
   )
