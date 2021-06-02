@@ -3,6 +3,14 @@ import meal2 from '../../assets/meal2.svg';
 import { useHistory } from 'react-router-dom';
 
 const Login = ({login, setLogin}) => {
+  const history = useHistory();
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setLogin(!login);
+    history.push("/");
+  }
+
   return (
     <Container>
       <Wrapper>
