@@ -37,5 +37,23 @@ export const SimpleSelect = () => {
   };
 
   return (
+    <div>
+      <FormControl variant="outlined" className={classes.formControl} style={{backgroundColor: "#fff", borderRadius: ".5vw"}}>
+        <InputLabel id="demo-simple-select-outlined-label">Meal</InputLabel>
+        <Select
+          labelId="demo-simple-select-outlined-label"
+          id="demo-simple-select-outlined"
+          value={meal}
+          onChange={handleChange}
+          label="Meal"
+        >
+          <MenuItem value="Breakfast">Breakfast</MenuItem>
+          <MenuItem value="Lunch">Lunch</MenuItem>
+          <MenuItem value="Dinner">Dinner</MenuItem>
+          <MenuItem value="Snack">Snack</MenuItem>
+          <MenuItem value="Teatime">Teatime</MenuItem>
+        </Select>
+      </FormControl>
+    </div>
   );
 }
