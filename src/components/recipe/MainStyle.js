@@ -29,3 +29,14 @@ export const Img = styled.img`
   width: 10vw;
   margin: auto;
 `
+
+export const Button = styled.button`
+  background-color: #e1f0dd;
+  border: none;
+  border-radius: 0.3vw;
+  outline: none;
+  width: 25%;
+  margin: 1vh auto;
+  padding: 1vh 0.1vw;
+  cursor: pointer;
+`;
