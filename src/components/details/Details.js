@@ -55,6 +55,11 @@ const Details = (props) => {
             {recipe.totalNutrients.ENERC_KCAL.unit}
           </P>
         </LeftInfo>
+        <RecipeImage
+          src={recipe.image}
+          alt={recipe.label}
+          onError={handleError}
+        />
       </Wrapper>
     </Container>
   );
