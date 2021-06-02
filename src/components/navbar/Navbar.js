@@ -11,6 +11,12 @@ const Navbar = () => {
         {String(`<ata/> `)}
         <span>design</span>
       </Link>
+      <Nav hamburger={hamburger}>
+        <Link to="/about"><span>A</span>BOUT</Link>
+        <Link to={{pathname: "https://github.com/Ata-92"}} target="_blank" rel="noopener noreferrer"><span>G</span>ITHUB</Link>
+        <Link to="/login"><span>L</span>OGOUT</Link>
+      </Nav>
+      <Icon onClick={handleClick}><MdMenu /></Icon>
     </Container>
   );
 };
