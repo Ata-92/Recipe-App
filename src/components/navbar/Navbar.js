@@ -7,6 +7,10 @@ const Navbar = () => {
 
   return (
     <Container>
+      <Link to="/">
+        {String(`<ata/> `)}
+        <span>design</span>
+      </Link>
     </Container>
   );
 };
