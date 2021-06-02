@@ -21,6 +21,20 @@ const Form = () => {
           ref={queryTerm}
         />
       </Grid>
+      <Grid item>
+        <Button
+          variant="contained"
+          size="large"
+          style={{
+            textTransform: "none",
+            padding: "2vh 1vw",
+            fontWeight: "bolder",
+          }} onClick={() => handleClick(queryTerm)}
+        >
+          Search
+        </Button>
+      </Grid>
+
     </Grid>
   );
 };
