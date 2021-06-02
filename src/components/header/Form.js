@@ -6,6 +6,8 @@ import { useRef, useContext } from 'react';
 import { RecipeContext } from '../../context/RecipeContext';
 
 const Form = () => {
+  const { handleClick } = useContext(RecipeContext);
+  const queryTerm = useRef();
 
   return (
   );
