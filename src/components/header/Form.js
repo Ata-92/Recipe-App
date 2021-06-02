@@ -34,7 +34,9 @@ const Form = () => {
           Search
         </Button>
       </Grid>
-
+      <Grid item>
+        <SimpleSelect />
+      </Grid>
     </Grid>
   );
 };
