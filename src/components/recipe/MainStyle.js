@@ -11,3 +11,21 @@ export const Wrapper = styled.div`
   grid-template-columns: repeat(5, 1fr);
   padding: 2vh 1vw;
 `;
+
+export const Card = styled.div`
+  background-color: #00adb5;
+  box-shadow: 0.4vw 0.4vw 0.1vw 0.01vw gray;
+  display: flex;
+  flex-direction: column;
+  padding: 1vh 0;
+`;
+
+export const H5 = styled.h5`
+  font-size: larger;
+  margin-bottom: 1vh;
+`;
+
+export const Img = styled.img`
+  width: 10vw;
+  margin: auto;
+`
