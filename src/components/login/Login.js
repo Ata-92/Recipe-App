@@ -5,6 +5,10 @@ import { useHistory } from 'react-router-dom';
 const Login = ({login, setLogin}) => {
   return (
     <Container>
+      <Wrapper>
+        <Img src={meal2} alt="Cook Icon"/>
+        <H1>{String(`<ata/>`)} RECIPE</H1>
+      </Wrapper>
     </Container>
   )
 }
