@@ -49,3 +49,21 @@ export const P = styled.p`
   margin: 1vh 0;
   text-align: right;
 `;
+
+export const RecipeImage = styled.img`
+  width: 20%;
+  box-shadow: 0 0 0 .5vw #00adb5, 0 0 0 .6vw white;
+  border-radius: .1vw;
+  margin: 2vh 5vw;
+`;
+
+export const RightInfo = styled.div`
+  float: right;
+  width: 40%;
+`;
+
+export const Ol = styled.ol``;
+
+export const Li = styled.li`
+  margin: 1vh 0;
+`;
