@@ -10,6 +10,10 @@ const RecipeCard = ({ card }) => {
     });
   }
 
+  const handleError = (e) => {
+    e.target.style.visibility = "hidden";
+    e.target.style.padding = "0 0 15vh";
+  }
 
   return (
     <Card id={card.id}>
