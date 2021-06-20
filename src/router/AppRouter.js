@@ -8,11 +8,14 @@ import About from '../components/about/About';
 import Main from '../components/recipe/Main';
 import Details from '../components/details/Details';
 import PrivateRouter from './PrivateRouter';
+import dotenv from 'dotenv';
 
 const AppRouter = () => {
   const [login, setLogin] = useState(false);
   const [cards, setCards] = useState();
   const [query, setQuery] = useState();
+
+  dotenv.config();
   const APP_ID = process.env.REACT_APP_APP_ID;
   const APP_KEY = process.env.REACT_APP_APP_KEY;
 
