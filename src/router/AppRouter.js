@@ -13,8 +13,8 @@ const AppRouter = () => {
   const [login, setLogin] = useState(false);
   const [cards, setCards] = useState();
   const [query, setQuery] = useState();
-  const APP_ID = "e97f3f42";
-  const APP_KEY = "a4a3f97b1eb28df3474e7ce892e74e6d";
+  const APP_ID = process.env.REACT_APP_APP_ID;
+  const APP_KEY = process.env.REACT_APP_APP_KEY;
 
   const getRecipe = async(query) => {
     if (query) {
