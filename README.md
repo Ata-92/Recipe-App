@@ -1,10 +1,10 @@
-# Getting Started with Create React App
+# Recipe App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Authenticating user, fetching foods user wants, displaying food details once clicked using ReactJS, styled-components, Material-UI 
 
-## Available Scripts
+## My Outcome
 
-In the project directory, you can run:
+![Recipe-App](recipe-app.gif)
 
 ### `yarn start`
 
